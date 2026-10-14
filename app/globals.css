@@ -16,6 +16,19 @@ body {
   background: #05080a;
 }
 
+/* Outfit and JetBrains Mono ship no Thai/Japanese glyphs; chain Kanit + Noto Sans JP as fallbacks */
+@layer utilities {
+  .font-kanit {
+    font-family: var(--font-kanit), var(--font-jp), sans-serif;
+  }
+  .font-outfit {
+    font-family: var(--font-outfit), var(--font-kanit), var(--font-jp), sans-serif;
+  }
+  .font-code {
+    font-family: var(--font-jetbrains), var(--font-kanit), var(--font-jp), monospace;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;

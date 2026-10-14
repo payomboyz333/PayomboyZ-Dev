@@ -27,9 +27,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        kanit: ["var(--font-kanit)", "sans-serif"],
-        outfit: ["var(--font-outfit)", "sans-serif"],
-        code: ["var(--font-jetbrains)", "monospace"],
+        kanit: ["var(--font-kanit)", "var(--font-jp)", "sans-serif"],
+        outfit: ["var(--font-outfit)", "var(--font-kanit)", "var(--font-jp)", "sans-serif"],
+        code: ["var(--font-jetbrains)", "var(--font-kanit)", "var(--font-jp)", "monospace"],
       },
       boxShadow: {
         "neon-green": "0 0 25px rgba(0, 255, 102, 0.35)",
